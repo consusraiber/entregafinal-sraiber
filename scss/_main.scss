@@ -1,0 +1,222 @@
+/*Main*/
+
+/*Banner*/
+
+/*Banner*/
+
+.banner {
+    background-image: url(../img/fotobanner.jpg);
+    height: calc(100vh - 100px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+.bannerContenido {
+
+    @include texto;
+
+    h1 {
+        font-size: 6rem;
+        font-weight: bold;
+        color: $color-titulo;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 4rem;
+        font-weight: bold;
+        color: $color-titulo-sec;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: $color-texto;
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 20px;
+        
+    }
+}
+
+/*Quienes somos*/
+
+.servicios {
+
+    @include texto;
+
+    h1 {
+        color: $color-titulo;
+        font-size: 3rem;
+    }
+
+    h2 {
+        color: $color-titulo-sec;
+        font-size: 2rem;
+    }
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+
+    img {
+        max-width: 100%;
+    }
+
+    h3 {
+        margin: 10px 0;
+        color: #910a3b;
+        font-size: 2rem;
+    }
+
+    p {
+        margin: 10px 0;
+        color: $color-texto;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+.contenedorQuienesomos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/*Servicios*/
+
+.servicios {
+    text-align: center;
+    margin: 10vh;
+    border-bottom: 1px solid #910a3b;
+
+    p {
+        font-size: 2rem;
+        color: $color-texto;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.tarjetaServicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color-principal;
+    border: 1px solid #029ae6;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+
+    h3 {
+        color: $color-titulo-sec;
+        text-align: center;
+    }
+
+    p {
+        margin: 10px 0;
+        color: $color-texto;
+        text-align: center;
+    }
+
+    button {
+        background-color: #029ae6;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 10px;
+
+        &:hover {
+            background-color: #910a3b;
+        }
+    }
+}
+
+/*Testimonios*/
+
+.contenedorTestimonios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color: $color-texto;
+    margin: auto;
+    padding: 10px;
+    font-weight: bold;
+
+    p {
+        margin-top: 30px;
+    }
+}
+
+.videoTestigos {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    /* Ajusta la altura según sea necesario */
+
+    align-self: center;
+    /* Centra verticalmente dentro del contenedor */
+}
+
+/*Contacto*/
+
+.contacto {
+    position: relative;
+    color: #910a3b;
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+    margin: 10vh;
+    border-bottom: 1px solid #910a3b;
+    text-align: center;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+
+    label {
+        font-weight: bold;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}

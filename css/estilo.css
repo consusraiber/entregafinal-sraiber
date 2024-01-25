@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/*Mixin*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #000000;
+}
+
+.imgLogo {
+  width: 150px;
+}
+
+.navbar-toggler-icon {
+  background-color: #910a3b;
+}
+
+/*Header*/
+.encabezado {
+  background-color: #000000;
+}
+
+.menuNav li a {
+  text-transform: uppercase;
+  color: #910a3b;
+  font-size: 1.4rem;
+  border-left: 1px solid #910a3b;
+  border-right: 1px solid #910a3b;
+  padding: 0;
+}
+.menuNav a:hover {
+  background-color: black;
+  color: #029ae6;
+}
+
+/*Main*/
+/*Banner*/
+/*Banner*/
+.banner {
+  background-image: url(../img/fotobanner.jpg);
+  height: calc(100vh - 100px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bannerContenido {
+  text-align: center;
+  text-transform: uppercase;
+}
+.bannerContenido h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #029ae6;
+  margin-bottom: 10px;
+}
+.bannerContenido h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #910a3b;
+  margin-bottom: 10px;
+}
+.bannerContenido p {
+  color: #fafafa;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+/*Quienes somos*/
+.servicios {
+  text-align: center;
+  text-transform: uppercase;
+}
+.servicios h1 {
+  color: #029ae6;
+  font-size: 3rem;
+}
+.servicios h2 {
+  color: #910a3b;
+  font-size: 2rem;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border: 1px solid black;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+.tarjeta img {
+  max-width: 100%;
+}
+.tarjeta h3 {
+  margin: 10px 0;
+  color: #910a3b;
+  font-size: 2rem;
+}
+.tarjeta p {
+  margin: 10px 0;
+  color: #fafafa;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.contenedorQuienesomos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/*Servicios*/
+.servicios {
+  text-align: center;
+  margin: 10vh;
+  border-bottom: 1px solid #910a3b;
+}
+.servicios p {
+  font-size: 2rem;
+  color: #fafafa;
+  padding: 10px;
+  text-align: center;
+}
+
+.tarjetaServicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  border: 1px solid #029ae6;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+.tarjetaServicio h3 {
+  color: #910a3b;
+  text-align: center;
+}
+.tarjetaServicio p {
+  margin: 10px 0;
+  color: #fafafa;
+  text-align: center;
+}
+.tarjetaServicio button {
+  background-color: #029ae6;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.tarjetaServicio button:hover {
+  background-color: #910a3b;
+}
+
+/*Testimonios*/
+.contenedorTestimonios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  color: #fafafa;
+  margin: auto;
+  padding: 10px;
+  font-weight: bold;
+}
+.contenedorTestimonios p {
+  margin-top: 30px;
+}
+
+.videoTestigos {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  /* Ajusta la altura según sea necesario */
+  align-self: center;
+  /* Centra verticalmente dentro del contenedor */
+}
+
+/*Contacto*/
+.contacto {
+  position: relative;
+  color: #910a3b;
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-align: center;
+  margin: 10vh;
+  border-bottom: 1px solid #910a3b;
+  text-align: center;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+form label {
+  font-weight: bold;
+}
+form textarea {
+  resize: vertical;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/*Footer*/
+.footer {
+  background-color: black;
+  color: #fafafa;
+  padding: 10px 0;
+}
+
+.footerContenido {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer h3,
+.footer h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #910a3b;
+}
+
+.infoContacto p,
+.redesSociales a {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+
+.infoContacto {
+  flex: 1;
+}
+
+.redesSociales {
+  flex: 1;
+  text-align: right;
+}
+.redesSociales a {
+  color: #029ae6;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+.redesSociales a:hover {
+  color: #910a3b;
+}
+
+.footer i {
+  margin-right: 10px;
+}
+
+/*Lo hago responsive*/
+/*Vista tablet*/
+/*768px hasta 1023px*/
+@media (max-width: 1023px) {
+  /*Header*/
+  .encabezado {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  /*Banner*/
+  .bannerContenido h1 {
+    font-size: 3rem;
+  }
+  .bannerContenido h2 {
+    font-size: 2rem;
+  }
+  /*Ajustes específicos para la vista móvil*/
+  /*0 hasta 760px*/
+  /*Servicios*/
+  /*Footer*/
+}
+@media (max-width: 1023px) and (max-width: 768px) {
+  /*Destinos*/
+  .contenedorDestinos {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1023px) {
+  .servicios h1 {
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 28px;
+    text-transform: none;
+  }
+  .servicios h2 {
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 22px;
+    text-transform: none;
+  }
+  .servicios p {
+    font-size: 1rem;
+  }
+  .footerContenido {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/*Ajustes específicos para la vista móvil*/
+/*0 hasta 760px*/
+@media (max-width: 768px) {
+  .bannerContenido p {
+    font-size: 1rem;
+  }
+  .infoContacto,
+  .redesSociales {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

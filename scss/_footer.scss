@@ -1,0 +1,55 @@
+/*Footer*/
+
+.footer {
+    background-color: black;
+    color: $color-texto;
+    padding: 10px 0;
+}
+
+.footerContenido {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer {
+
+    h3,
+    h4 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #910a3b;
+    }
+}
+
+.infoContacto p,
+.redesSociales a {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.infoContacto {
+    flex: 1;
+}
+
+.redesSociales {
+    flex: 1;
+    text-align: right;
+
+    a {
+        color: #029ae6;
+        text-decoration: none;
+        margin-right: 10px;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: #910a3b;
+        }
+    }
+}
+
+.footer i {
+    margin-right: 10px;
+}

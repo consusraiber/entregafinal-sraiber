@@ -1,0 +1,84 @@
+/*Lo hago responsive*/
+
+/*Vista tablet*/
+/*768px hasta 1023px*/
+
+@media (max-width: 1023px) {
+    /*Header*/
+
+    .encabezado {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*Banner*/
+
+    .bannerContenido {
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    /*Ajustes específicos para la vista móvil*/
+    /*0 hasta 760px*/
+
+    @media (max-width: 768px) {
+        /*Destinos*/
+
+        .contenedorDestinos {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /*Servicios*/
+
+    .servicios {
+        h1 {
+            padding: 0;
+            margin: 0;
+            line-height: 1.2;
+            text-align: center;
+            font-size: 28px;
+            text-transform: none;
+        }
+
+        h2 {
+            padding: 0;
+            margin: 0;
+            line-height: 1.2;
+            text-align: center;
+            font-size: 22px;
+            text-transform: none;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    /*Footer*/
+
+    .footerContenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/*Ajustes específicos para la vista móvil*/
+/*0 hasta 760px*/
+
+@media (max-width: 768px) {
+    .bannerContenido p {
+        font-size: 1rem;
+    }
+
+    .infoContacto,
+    .redesSociales {
+        text-align: center;
+    }
+}
